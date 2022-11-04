@@ -84,7 +84,7 @@ pub fn verify_cert_dns_name_or_ip(
                                 Ok(true) => return NameIteration::Stop(Ok(())),
                                 Ok(false) => (),
                                 Err(_) => {
-                                    return NameIteration::Stop(Err(Error::BadDER));
+                                    return NameIteration::Stop(Err(Error::BadDer));
                                 }
                             }
                         }
